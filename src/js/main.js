@@ -1,17 +1,15 @@
 let cardline = document.getElementById("cardline");
 let scrollAtual = window.scrollY;
 
-// window.addEventListener("scroll", function () {
-//      const cardilv = document.getElementById("ilv_card");
-//      cardilv.style.opacity = `${
-//           (window.scrollY / (cardline.scrollHeight + 450)) * 100
-//      }%`;
+window.addEventListener("scroll", function () {
+     const cardilv = document.getElementById("ilv_card");
+     cardilv.style.opacity = `${
+          (window.scrollY / (cardline.scrollHeight + 450)) * 100
+     }%`;
 
-//      if (this.window.scrollY > cardline.scrollHeight) {
-//      }
-// });
-
-
+     if (this.window.scrollY > cardline.scrollHeight) {
+     }
+});
 
 function tempoPassado(data) {
      const agora = new Date();
