@@ -34,7 +34,7 @@ function tempoPassado(data) {
 
 setInterval(() => {
      let datetext = document.getElementById("date");
-     let namore = tempoPassado(1722740400);
+     let namore = tempoPassado(1691118000);
 
      datetext.textContent = `${namore.anos}${namore.meses}${namore.dias}${namore.horas}${namore.minutos}${namore.segundos}`;
 }, 1000);
