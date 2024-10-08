@@ -13,10 +13,12 @@ setInterval(() => {
      imgCollection.style.transition = "transform .3s ease-in-out";
      imgCollection.style.transform = "scale(.01)";
 
+     imgIndex = (imgIndex + 1) % imgList.length;
+          imgCollection.src = imgList[imgIndex];
+
      setTimeout(() => {
 
-          imgIndex = (imgIndex + 1) % imgList.length;
-          imgCollection.src = imgList[imgIndex];
+          
           imgCollection.style.transform = "scale(1)";
 
      }, 300);
