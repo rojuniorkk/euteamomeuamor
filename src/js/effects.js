@@ -40,23 +40,23 @@ setInterval(() => {
      }, 5000);
 }, 290);
 
-//Eu te amo infinitamente
-// function gen_ilv() {
-//      const ilv = document.getElementById("ilv");
+// Eu te amo infinitamente
+function gen_ilv() {
+     const ilv = document.getElementById("ilv");
 
-//      const som = 5;
+     const som = 5;
 
-//      for (let i = 0; i < som; i++) {
-//           let a = document.createElement("div");
-//           a.classList.add("flex", "flex-col", "items-center", "text-auto");
-//           a.textContent += `Eu te amo muito ❤️`;
+     for (let i = 0; i < som; i++) {
+          let a = document.createElement("div");
+          a.classList.add("flex", "flex-col", "items-center", "text-auto");
+          a.textContent += `Eu te amo muito ❤️`;
 
-//           ilv.appendChild(a);
-//      }
+          ilv.appendChild(a);
+     }
 
-//      countILV += som;
-//      document.getElementById("ilv_cout").textContent = formatNum(countILV);
-// }
+     countILV += som;
+     document.getElementById("ilv_cout").textContent = formatNum(countILV);
+}
 
-// window.addEventListener("scroll", gen_ilv);
-// gen_ilv();
+window.addEventListener("scroll", gen_ilv);
+gen_ilv();
