@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+     <head>
+          <meta charset="UTF-8" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0"
+          />
+
+          <link
+               rel="stylesheet"
+               href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=heart_broken"
+          />
+          <script src="https://cdn.tailwindcss.com"></script>
+
+          <style>
+               body {
+                    background-color: rgba(20, 20, 20, 1);
+               }
+
+               .material-symbols-outlined {
+                    font-variation-settings: "FILL" 1, "wght" 500, "GRAD" 0,
+                         "opsz" 24;
+               }
+
+               /* #heart {
+                    font-size: 60vw;
+               } */
+
+               .v {
+                    border: 1px solid red;
+               }
+
+               .pulse {
+                    animation: heart-beat 1s infinite alternate;
+               }
+
+               @keyframes heart-beat {
+                    0% {
+                         transform: scale(1);
+                    }
+                    50% {
+                         transform: scale(1.2);
+                    }
+                    100% {
+                         transform: scale(1);
+                    }
+               }
+          </style>
+
+          <title>...</title>
+     </head>
+     <body>
+          <main
+               class="container mx-auto h-screen flex flex-col gap-0 justify-center items-center"
+          >
+               <label
+                    id="heart"
+                    class="material-symbols-outlined text-white text-center w-full text-9xl opacity-55 pulse"
+               >
+                    heart_broken
+               </label>
+          </main>
+     </body>
+</html>
